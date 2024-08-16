@@ -1,6 +1,7 @@
 package ar.edu.untref.dyasc;
 
 import java.util.List;
+import java.math.BigInteger;
 
 public class Ejecutable {
 	public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class Ejecutable {
 
 		try {
 			int n = Integer.parseInt(args[0]);
-			List<Integer> sequence = fibo.fibonacciSequence(n);
+			List<BigInteger> sequence = fibo.fibonacciSequence(n);
 			System.out.println("fibo <" + n + ">: " + sequence.toString());
 		} catch (NumberFormatException e) {
 			System.err.println("Error: Argument must be an integer.");

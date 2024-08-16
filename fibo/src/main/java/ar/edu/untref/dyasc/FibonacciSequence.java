@@ -3,19 +3,21 @@ package ar.edu.untref.dyasc;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.math.BigInteger;
+
 public class FibonacciSequence {
-	public List<Integer> fibonacciSequence(int n) {
-		List<Integer> sequence = new ArrayList<Integer>();
+	public List<BigInteger> fibonacciSequence(int n) {
+		List<BigInteger> sequence = new ArrayList<BigInteger>();
 		if (n <= 0)
 			throw new IllegalArgumentException("The argument must be a positive integer");
 
-		int a = 0;
-		int b = 1;
+		BigInteger a = BigInteger.ZERO;
+		BigInteger b = BigInteger.ONE;
 
-		int aux;
+		BigInteger aux;
 		for (int i = 0; i < n; i++) {
 			sequence.add(a);
-			aux = a + b;
+			aux = a.add(b);
 			a = b;
 			b = aux;
 		}

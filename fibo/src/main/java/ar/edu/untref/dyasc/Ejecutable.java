@@ -14,7 +14,11 @@ public class Ejecutable {
 		try {
 			int n = Integer.parseInt(args[0]);
 			List<Integer> sequence = fibo.fibonacciSequence(n);
-			System.out.println("fibo <" + n + ">: " + sequence.toString());
+			String output = "";
+			for (Integer number : sequence) {
+				output += number + " ";
+			}
+			System.out.println("fibo <" + n + ">: " + output);
 		} catch (NumberFormatException e) {
 			System.err.println("Error: Argument must be an integer.");
 			System.exit(1);

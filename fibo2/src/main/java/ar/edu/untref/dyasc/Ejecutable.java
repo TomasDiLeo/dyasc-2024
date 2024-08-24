@@ -1,6 +1,7 @@
 package ar.edu.untref.dyasc;
 
 import java.util.List;
+import java.util.Collections;
 import org.apache.commons.cli.*;
 
 public class Ejecutable {
@@ -45,7 +46,7 @@ public class Ejecutable {
 			
 			String breakLine = " ";
 			if(horizontalVertical == 'v') breakLine = "\n";
-			if(directInverse == 'i') sequence = sequence.reversed();
+			if(directInverse == 'i') Collections.reverse(sequence);
 			
 			String output = "";
 			for(Integer number : sequence) {

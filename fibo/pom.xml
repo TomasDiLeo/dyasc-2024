@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ar.edu.untref.dyasc</groupId>
-  <artifactId>proyecto-base</artifactId>
+  <artifactId>fibo</artifactId>
   <version>1.0.0</version>
 
   <dependencies>
@@ -44,7 +44,7 @@
   </reporting>
 
   <build>
-    <finalName>proyecto-base</finalName>
+    <finalName>fibo</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

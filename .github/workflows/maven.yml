@@ -27,9 +27,13 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+
     - name: Build with Maven
-      run: mvn -B package --file fibo2/pom.xml
+      working-directory: fibo2 
+      run: mvn -B package
 
     - name: Run tests (Fibo 2)
-      run: mvn test --file fibo2/pom.xml
+      working-directory: fibo2 
+      run: mvn clean test -X
+      
       

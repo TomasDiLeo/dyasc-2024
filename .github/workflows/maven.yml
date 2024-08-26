@@ -30,3 +30,4 @@ jobs:
     - name: Build with Maven
       working-directory: fibo2
       run: mvn -B verify --file pom.xml
+      run: mvn test

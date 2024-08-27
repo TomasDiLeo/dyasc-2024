@@ -29,5 +29,4 @@ jobs:
         cache: maven
     - name: Build with Maven
       working-directory: fibo2
-      run: mvn -B verify --file pom.xml
-      run: mvn test
+      run: mvn -B package --file pom.xml

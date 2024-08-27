@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Collections;
 import org.apache.commons.cli.*;
 
-public class Ejecutable {
+public class Executable {
 	public static void main(String[] args) {
 		Options options = new Options();
 		Option optionO = Option.builder("o")

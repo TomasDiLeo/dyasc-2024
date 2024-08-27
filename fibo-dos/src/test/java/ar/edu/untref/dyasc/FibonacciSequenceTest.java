@@ -59,6 +59,4 @@ class FibonacciSequenceTest {
 		assertEquals(47, sequence.size(), "The size of the array should be 47");
 		assertEquals(1836311903, (int) sequence.get(46), "n47 in the sequence is 1836311903");
 	}
-    
-
 }

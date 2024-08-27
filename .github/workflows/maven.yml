@@ -28,5 +28,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      working-directory: fibo2
-      run: mvn -B package --file pom.xml
+      run: mvn clean package --file fibo-dos/pom.xml

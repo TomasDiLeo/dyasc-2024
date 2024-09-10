@@ -27,5 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: Build with Maven FIBO DOS
       run: mvn clean package --file fibo-dos/pom.xml
+    - name: TESTS with Maven FIBO DOS
+      run: mvn test --file fibo-dos/pom.xml
